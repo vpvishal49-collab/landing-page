@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SB Gemmological Solutions Ltd - OREADES</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Nav -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/SB GEMMOLOGICAL SOLUTIONS LTD BLUE LOGO.png" alt="SB Gemmological Solutions Logo">
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#offer">WHAT WE OFFER</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#testimonials">TESTIMONIALS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Carousel -->
+    <section id="home" class="hero">
+        <div class="hero-carousel">
+            <div class="hero-slide active">
+                <img src="assets/COVER PAGE 01.png" alt="Cover Page 01">
+                <div class="hero-content">
+                    <p class="hero-subtitle">creative thinking inspires visionary ideas</p>
+                    <h1>WE THINK OUTSIDE THE BOX</h1>
+                    <button class="btn-primary discover-btn">DISCOVER</button>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <img src="assets/COVER PAGE 02.png" alt="Cover Page 02">
+                <div class="hero-content">
+                    <p class="hero-subtitle">creative thinking inspires visionary ideas</p>
+                    <h1>WE THINK OUTSIDE THE BOX</h1>
+                    <button class="btn-primary discover-btn">DISCOVER</button>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <img src="assets/COVER PAGE 03.png" alt="Cover Page 03">
+                <div class="hero-content">
+                    <p class="hero-subtitle">creative thinking inspires visionary ideas</p>
+                    <h1>WE THINK OUTSIDE THE BOX</h1>
+                    <button class="btn-primary discover-btn">DISCOVER</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-btn prev-btn" onclick="changeSlide(-1)">‹</button>
+        <button class="carousel-btn next-btn" onclick="changeSlide(1)">›</button>
+        <div class="carousel-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- Advertisement 1 -->
+    <section class="advertisement-section">
+        <img src="assets/ADVERTISEMENT 1.png" alt="Advertisement 1">
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <h2>ABOUT US</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>SB Gemmological Solutions is a specialist firm with extensive local and international experience. We work hand in hand to execute every facet of the gemmological value chain, providing knowledge, consultation and bespoke services.</p>
+                <p>With over 11 years of experience in education and gemmology, we are committed to delivering excellence and quality in everything we do.</p>
+            </div>
+            <img src="assets/ABOUT US.png" alt="About Us">
+        </div>
+    </section>
+
+    <!-- Advertisement 2 -->
+    <section class="advertisement-section">
+        <img src="assets/ADVERTISEMENT 2.png" alt="Advertisement 2">
+    </section>
+
+    <!-- What We Offer Section -->
+    <section id="offer" class="offer-section">
+        <h2>WHAT WE OFFER</h2>
+        
+        <!-- Quality Control Solutions -->
+        <div class="offer-category">
+            <div class="offer-header" onclick="toggleOffer('quality-control')">
+                <img src="assets/QUALITY CONTROL SOLUTIONS IMAGE.png" alt="Quality Control Solutions">
+                <h3>QUALITY CONTROL SOLUTIONS</h3>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="offer-content" id="quality-control">
+                <div class="offer-item">
+                    <img src="assets/GEMMOLOGICAL LABORATORY IMAGE.png" alt="Gemmological Laboratory">
+                    <div class="offer-item-text">
+                        <h4>GEMMOLOGICAL LABORATORY</h4>
+                        <p>Setting up a gemmological laboratory to international standards as per ISO/IEC 17025 and ILAC accreditations. We cover facility layout, specialized equipment, personnel, training, operations, infrastructure, and adherence to standards, all of which are customisable depending on your requirements.</p>
+                    </div>
+                </div>
+                <div class="offer-item reverse">
+                    <div class="offer-item-text">
+                        <h4>QUALITY CONTROL DEPARTMENT</h4>
+                        <p>Setting up a QC department is a foundational step for consistent product standards, reducing issues, and meeting expectations. Our services are customisable for manufacturing, wholesale, or retail setups.</p>
+                    </div>
+                    <img src="assets/QUALITY CONTROL DEPARTMENT IMAGE.png" alt="Quality Control Department">
+                </div>
+                <div class="offer-item">
+                    <img src="assets/QUALITY ASSURANCE TRAINING IMAGE.png" alt="Quality Assurance Training">
+                    <div class="offer-item-text">
+                        <h4>QUALITY ASSURANCE TRAINING</h4>
+                        <p>We train staff in quality control procedures, gemmology, equipment use, and audit services, adhering to appropriate compliances and standards.</p>
+                    </div>
+                </div>
+                <div class="offer-item reverse">
+                    <div class="offer-item-text">
+                        <h4>PURCHASE OF ADVANCED GEMMOLOGICAL EQUIPMENT</h4>
+                        <p>For retail setup, we advise all things related to purchase of gemmological equipment, whether advanced or basic, including tools like microscopes, UV machines, FTIR, Raman, and PL Spectroscope.</p>
+                    </div>
+                    <img src="assets/PURCHASE OF ADVANCED GEMMOLOGICAL EQUIPMENT IMAGE.png" alt="Purchase of Advanced Gemmological Equipment">
+                </div>
+            </div>
+        </div>
+
+        <!-- Diamonds / Gemstones -->
+        <div class="offer-category">
+            <div class="offer-header" onclick="toggleOffer('diamonds-gemstones')">
+                <img src="assets/DIAMONDS - GEMSTONES IMAGE.png" alt="Diamonds / Gemstones">
+                <h3>DIAMONDS / GEMSTONES</h3>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="offer-content" id="diamonds-gemstones">
+                <div class="offer-item">
+                    <img src="assets/PURCHASING CONSULTATION IMAGE.png" alt="Purchasing Consultation">
+                    <div class="offer-item-text">
+                        <h4>PURCHASING CONSULTATION</h4>
+                        <p>We provide advice on gemstones, diamonds and jewellery purchases, with unbiased recommendations depending on a customers' needs, wants and requirements. Finding the right product for you is at the pinnacle of what we do.</p>
+                    </div>
+                </div>
+                <div class="offer-item reverse">
+                    <div class="offer-item-text">
+                        <h4>PURCHASING LABORATORY-GROWN DIAMONDS, NATURAL DIAMONDS AND GEMSTONES</h4>
+                        <p>Purchasing of diamonds, laboratory-grown diamonds, natural gemstones, diamond master stones and synthetic gemstones.</p>
+                    </div>
+                    <img src="assets/DIAMONDS AND GEMSTONES IMAGE.png" alt="Diamonds and Gemstones">
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Training -->
+        <div class="offer-category">
+            <div class="offer-header" onclick="toggleOffer('education')">
+                <img src="assets/EDUCATION IMAGE.png" alt="Education Training">
+                <h3>EDUCATION TRAINING</h3>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="offer-content" id="education">
+                <div class="offer-item">
+                    <img src="assets/EDUCATIONAL SEMINARS - GEMMOLOGY IMAGE.png" alt="Educational Seminars - Gemmology">
+                    <div class="offer-item-text">
+                        <h4>EDUCATIONAL SEMINARS - GEMMOLOGY</h4>
+                        <p>Unlock the world of gemstones with our completely customisable courses, ranging from a day course to even longer. Most importantly, we offer hands-on gemmology training designed to suit your needs, schedule and staff whether you are a manufacturer, wholesaler, retailer or simply someone who would like to enhance their skills.</p>
+                    </div>
+                </div>
+                <div class="offer-item reverse">
+                    <div class="offer-item-text">
+                        <h4>EDUCATIONAL SEMINARS - RETAIL SALES</h4>
+                        <p>We understand your consumers' needs by training retail staff, not with your regular what to wear and how to act, but beyond!</p>
+                    </div>
+                    <img src="assets/EDUCATIONAL SEMINARS - RETAIL SALES IMAGE.png" alt="Educational Seminars - Retail Sales">
+                </div>
+                <div class="offer-item">
+                    <img src="assets/DESIGNING GEMMOLOGICAL COURSES IMAGE.png" alt="Designing Gemmological Courses">
+                    <div class="offer-item-text">
+                        <h4>DESIGNING GEMMOLOGICAL COURSES</h4>
+                        <p>With over 11 years of experience in education, Shaheen is able to design courses from seminars to gemmology programs on any topic within the gemmology world.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2>GALLERY</h2>
+        <div class="gallery-grid">
+            <img src="assets/GALLERY_01.png" alt="Gallery 01">
+            <img src="assets/GALLERY_02.png" alt="Gallery 02">
+            <img src="assets/GALLERY_03.png" alt="Gallery 03">
+            <img src="assets/GALLERY_04.png" alt="Gallery 04">
+            <img src="assets/GALLERY_05.png" alt="Gallery 05">
+            <img src="assets/GALLERY_06.png" alt="Gallery 06">
+            <img src="assets/GALLERY_07.png" alt="Gallery 07">
+            <img src="assets/GALLERY_08.png" alt="Gallery 08">
+            <img src="assets/GALLERY_09.png" alt="Gallery 09">
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <h2>TESTIMONIALS</h2>
+        <div class="testimonial-container">
+            <blockquote class="testimonial">
+                "Shaheen is one of the best in the business with a lot of practical and theoretical knowledge. She is extremely fun to work with and I recommend everyone to work with her."
+                <span class="testimonial-author">- P.K.</span>
+            </blockquote>
+            <div class="testimonial-dots">
+                <span class="testimonial-dot active"></span>
+                <span class="testimonial-dot"></span>
+                <span class="testimonial-dot"></span>
+                <span class="testimonial-dot"></span>
+                <span class="testimonial-dot"></span>
+            </div>
+        </div>
+        <!-- Testimonials Popup -->
+        <div class="testimonial-popup" id="testimonial-popup">
+            <img src="assets/TESTIMONIALS - POPUP.png" alt="Testimonials Popup">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-info-row">
+            <div class="contact-info-item">
+                <strong>CALL US</strong>
+                <p>+41 7556 65755</p>
+            </div>
+            <div class="contact-info-item">
+                <strong>ADDRESS</strong>
+                <p>London, UK</p>
+            </div>
+            <div class="contact-info-item">
+                <strong>EMAIL</strong>
+                <p>info@sbgemmological.com</p>
+            </div>
+        </div>
+        <h2>CONTACT</h2>
+        <form class="contact-form">
+            <div class="form-row">
+                <input type="text" name="name" placeholder="Your Name*" required>
+                <input type="email" name="email" placeholder="Email*" required>
+            </div>
+            <textarea name="message" placeholder="How can we help you?"></textarea>
+            <button type="submit" class="btn-primary send-btn">SEND</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <img src="assets/SB GEMMOLOGICAL SOLUTIONS LTD WHITE LOGO.png" alt="SB Gemmological Solutions Logo">
+            <span>Company Registration no: 15961725</span>
+            <div class="footer-social">
+                <span class="follow-text">Follow us</span>
+                <a href="#" class="social-icon linkedin">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="#F7941E"/>
+                        <path d="M8.5 18H6V9.5H8.5V18ZM7.25 8.5C6.56 8.5 6 7.94 6 7.25C6 6.56 6.56 6 7.25 6C7.94 6 8.5 6.56 8.5 7.25C8.5 7.94 7.94 8.5 7.25 8.5ZM18 18H15.5V13.5C15.5 12.67 15.5 11.5 14.25 11.5C13 11.5 12.75 12.42 12.75 13.25V18H10.25V9.5H12.5V10.5C12.75 9.75 13.5 9 14.75 9C16.25 9 17.25 10 17.25 12V18H18Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="#F7941E"/>
+                        <path d="M12 8.5C10.07 8.5 8.5 10.07 8.5 12C8.5 13.93 10.07 15.5 12 15.5C13.93 15.5 15.5 13.93 15.5 12C15.5 10.07 13.93 8.5 12 8.5ZM12 14C10.9 14 10 13.1 10 12C10 10.9 10.9 10 12 10C13.1 10 14 10.9 14 12C14 13.1 13.1 14 12 14ZM15.5 7.5C15.5 7.78 15.28 8 15 8C14.72 8 14.5 7.78 14.5 7.5C14.5 7.22 14.72 7 15 7C15.28 7 15.5 7.22 15.5 7.5ZM17 6H7C6.45 6 6 6.45 6 7V17C6 17.55 6.45 18 7 18H17C17.55 18 18 17.55 18 17V7C18 6.45 17.55 6 17 6ZM16.5 16.5H7.5V7.5H16.5V16.5Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="#home" class="scroll-top">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="#000"/>
+                        <path d="M12 8L8 12H10.5V16H13.5V12H16L12 8Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
